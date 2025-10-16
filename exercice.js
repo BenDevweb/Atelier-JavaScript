@@ -55,21 +55,81 @@ console.log(jourDeLaSemaine(5));
 
 // Fonction verification de plage
 
-function verificationDePlage(nombre) {
-  return nombre > 10 && nombre < 20;
+function verifierPlage(nombre) {
+ if (nombre > 10 && nombre < 20) {
+    return true;
+ }
+ else {
+    return false;
+ }
 }
 
-console.log(verificationDePlage(15)); 
-console.log(verificationDePlage(9));  
-console.log(verificationDePlage(25)); 
+console.log(verifierPlage(15)); 
+console.log(verifierPlage(9));  
+console.log(verifierPlage(25)); 
 
 // Fonction Verification de couleur 
 
-function verificationCouleur(couleur) {
-  return couleur === "Rouge" || couleur === "Bleu";
+function verifierCouleur(couleur) {
+ 
+    if (couleur === "Rouge" || couleur === "Bleu") {
+        return true;
+    }   else {  
+        return false;
+    } 
 }
 
 
-console.log(verificationCouleur("Rouge")); 
-console.log(verificationCouleur("Bleu"));  
-console.log(verificationCouleur("Vert")); 
+console.log(verifierCouleur("Rouge")); 
+console.log(verifierCouleur("Bleu"));  
+console.log(verifierCouleur("Vert")); 
+
+
+// Fonction d'un compteur avec la boucle while
+
+function compteur(){
+  let i = 1;
+  while(i <= 10){
+    console.log(i);
+    i++;
+  }
+}
+compteur();
+
+//Fonction somme avec la boucle for
+function somme(){
+  let total = 0;
+  for(let i = 1; i <= 10; i++){
+    console.log(total);
+    total += i;
+  }
+}
+somme();
+
+// Fonction somme du N avec boucle for
+
+function sommeDe1aN(N) {
+  let somme = 0;
+
+  for (let i = 1; i <= N; i++) {
+    somme += i; 
+  }
+
+  return somme;
+}
+
+console.log(sommeDe1aN(5)); 
+
+
+//Fonction compteur decroissant avec while
+
+function compteurDecroissant(){
+  let i = 10;
+  while(i >= 0){
+    console.log(i);
+    i --;
+
+  }
+}
+compteurDecroissant()
+

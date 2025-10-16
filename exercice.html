@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Fonction verification de saisie
+
+        function verifierSaisie(){
+            let nombre;
+            do{
+                nombre = parseFloat(prompt("Veuillez entrer un nombre strictement positif !"));
+            } while(isNaN(nombre) || nombre <= 0);
+            alert("Bravo ! vous avez saisi le nombre " + nombre + ".");
+            return nombre;
+
+        }
+        verifierSaisie();
+
+        function demanderUnNombre(){
+            let nombre = parseFloat(prompt("Veillez entrer un nombre strictement positif !"));
+
+            if (nombre <= 0){
+                alert("Dommage ! vous avez saisi un nombre negatif .");
+            } else {
+                alert("Bravo ! vous avez saisi le nombre " + nombre);
+            }
+            return nombre;
+        }
+        demanderUnNombre();
+    </script>
+</body>
+</html>
