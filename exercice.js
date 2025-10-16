@@ -96,6 +96,16 @@ function compteur(){
 }
 compteur();
 
+// fonction compteur avec la boucle for
+function compterFor(){
+  for(let i = 1; i <= 10; i++){
+    console.log(i);
+    
+  }
+}
+compterFor();
+
+
 //Fonction somme avec la boucle for
 function somme(){
   let total = 0;
@@ -108,11 +118,13 @@ somme();
 
 // Fonction somme du N avec boucle for
 
-function sommeDe1aN(N) {
+function sommeDe1aN(n) {
   let somme = 0;
 
-  for (let i = 1; i <= N; i++) {
+  for (let i = 1; i <= n; i++) {
+    
     somme += i; 
+
   }
 
   return somme;
@@ -123,7 +135,7 @@ console.log(sommeDe1aN(5));
 
 //Fonction compteur decroissant avec while
 
-function compteurDecroissant(){
+function compterDecrementer(){
   let i = 10;
   while(i >= 0){
     console.log(i);
